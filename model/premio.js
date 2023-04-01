@@ -1,15 +1,15 @@
-const mongoose = require('mongoosed')
+const mongoose = require('mongoose')
 
-const premioSchema = new mongoose.premioSchema({
+const premioSchema = mongoose.Schema({
 
-    descricao : String,
+    descricao : {type: String},
 
-    pontos : Number,
+    pontos : {type : Number},
 
-    quantidade : Number,
+    quantidade : {type: Number},
 
 });
 
-const Premio = mongoose.model('Premio', premioSchema);
+const Premio = mongoose.model("Premio", premioSchema)
 
 module.exports = Premio;

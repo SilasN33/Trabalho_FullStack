@@ -1,0 +1,1 @@
+mongoose.model para criar um modelo de dados com base no esquema.

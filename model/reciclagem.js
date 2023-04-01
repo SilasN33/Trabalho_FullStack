@@ -8,7 +8,7 @@ const reciclagemSchema = mongoose.Schema({
 
     peso : {type : Number},
 
-    data : {type: Date},
+    data : {type: Number},
 
     pontos: { type: Number},
     
