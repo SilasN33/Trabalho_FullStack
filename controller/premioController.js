@@ -6,10 +6,10 @@ const criar = async (descricao , pontos, quantidade) => {
     return premio.save()
 }
 
-const atualizar= async (id,novo_premio)=> {
+const atualizar= async (id,premio_novo)=> {
     try{
         
-    const premio =Premio.updateOne({_id:new mongoose.Types.ObjectId(id)},{$set:{descricao:novo_premio}});
+    const premio =Premio.updateOne({_id:new mongoose.Types.ObjectId(id)},{$set:{descricao:premio_novo}});
     
     return premio;
 

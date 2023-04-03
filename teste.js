@@ -8,7 +8,7 @@ const uri = "mongodb+srv://Root:1234@cluster0.qnbvwjt.mongodb.net/Trabalho?retry
 mongoose.connect(uri).then(async (conn) => {
 
     // Usuario ---->
-    const criar_usuario = await usuarioController.criar('teste3000', '123', 23, "lat", "long");
+    const criar_usuario = await usuarioController.criar('BlackMaster', '123', 23, "lat", "long");
     console.log('Usuario Criado!' + criar_usuario)
 
     // const atualizar = await usuarioController.atualizar("64279bbf3a93f92929e8618b", 'Joao');
@@ -21,7 +21,7 @@ mongoose.connect(uri).then(async (conn) => {
     //console.log('Usuario Removido')
 
       // Reciclagem ---->
-    const criar_reciclagem = await reciclagemController.criar('garrafa', 'img', 111, 111 , 111, '6424b7e5b136acadeab1c02c');
+    const criar_reciclagem = await reciclagemController.criar('cocoa', 'img', 111, 111 , 111, '6424b7e5b136acadeab1c02c');
     console.log('Reciclagem Registrada!' + criar_reciclagem)
 
     //const atualizar = await reciclagemController.atualizar("6424b7e5b136acadeab1c02d", 'Latinha');
@@ -35,7 +35,7 @@ mongoose.connect(uri).then(async (conn) => {
 
 
     // Premio ---->
-    const criar_premio = await premioController.criar('Produto Teste', 33, 21);
+    const criar_premio = await premioController.criar('premio duck', 33, 21);
     console.log('Premio Criado', + criar_premio)
 
     //const atualiza_premio = await premioController.atualizar('64283a598bf9f21f6eeba60f', 'Mac Book');
